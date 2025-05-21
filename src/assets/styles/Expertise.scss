@@ -1,0 +1,158 @@
+.skills-container {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    svg {
+        color: white;
+    }
+}
+  
+.skills-container .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.skill.current {
+    grid-column: 2 / 4;   /* start at col 2, end just before col 4 */
+  }
+
+.skills-container .skills-grid .skill {
+    align-items: center;
+    text-align: left;
+}
+  
+.chip {
+    color: rgb(39, 40, 34) !important;
+    background: linear-gradient(90deg, #fddb4d, #f3ae2c) !important;
+    font-size: 0.8rem !important;
+    height: 25px !important;
+  
+    span {
+        font-family: 'Courier Prime', monospace;
+        color: rgb(39, 40, 34);
+    }
+  
+    svg {
+        height: 15px !important;
+    }
+}
+
+.flex-chips {
+    line-height: 2;
+    margin: 0.5;
+
+    .chip-title {
+        color: white;
+        padding-right: 10px;
+    }
+}
+
+.flex-chips .MuiChip-root {
+    margin-right: 0.5em;
+}
+
+.flex-chips .MuiChip-outlined {
+    background-color: #e0e0e0;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.flex-chips .MuiChip-outlined span {
+    color: rgb(39, 40, 34);
+}
+
+@media screen {
+    @media (max-width: 768px) {
+        .skills-container {
+            display: block;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    
+        .skills-container .skills-grid {
+            display: initial;
+        }
+        
+        .skills-container .skills-grid .skill {
+            padding-bottom: 5%;
+        }
+    }
+
+    @media (max-width: 567px) {
+        .skills {
+            font-size: 12px;
+        }
+    }
+}
+
+.term-text {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-top: -10px;
+     .term-gradient {
+      background: linear-gradient(90deg, #fddb4d, #f3ae2c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .cyber-text {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: -10px;
+     .cyber-gradient {
+      font-weight: 700;
+      background: linear-gradient(90deg, #50caff, #0070f3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+ 
+  .logo-slider {
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px; // adjust as needed
+    margin: 0 auto;
+    padding: 1rem 0;
+    position: relative;
+     mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  }
+   .logo-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll 20s linear infinite;
+  }
+ 
+ 
+  .logo-track img {
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+  }
+ 
+ 
+  .logo-track img.logo-ansys {
+    width: 280px !important;
+    height: auto !important;
+    margin-right: 25px !important;
+  }
+  
+  .logo-track img:hover {
+    transform: scale(1.1);
+  }
+ 
+ @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+ 
