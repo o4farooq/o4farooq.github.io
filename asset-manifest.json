@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4842d8b.css",
-    "main.js": "/static/js/main.a5504d05.js",
+    "main.css": "/static/css/main.c2d66b2e.css",
+    "main.js": "/static/js/main.3227df36.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/mock10.png": "/static/media/mock10.2d05b02ba569a430a255.png",
     "static/media/mock09.png": "/static/media/mock09.e18677ccfc932e52d754.png",
@@ -11,22 +11,24 @@
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/MatlabLogo.png": "/static/media/MatlabLogo.9fcb98eb6f153bbd66e8.png",
     "static/media/IC++Logo.svg.png": "/static/media/IC++Logo.svg.904c659a2c4e76605892.png",
-    "static/media/omer-logo.png": "/static/media/omer-logo.bf56483dd84052f60cfa.png",
     "static/media/SolidWorks-Logo.png": "/static/media/SolidWorks-Logo.63c89d740fd13b3fce5e.png",
     "static/media/autoLogo.svg.png": "/static/media/autoLogo.svg.86e473fd7f0a54a1864c.png",
     "static/media/VISION_Visuel-Post-Windoor-2023_V3.jpg": "/static/media/VISION_Visuel-Post-Windoor-2023_V3.11f116039b65822e3bfd.jpg",
     "static/media/ANSLogo.png": "/static/media/ANSLogo.8446ce72d68e50bf92c3.png",
+    "static/media/1200px-Cybertrucklogo.svg.png": "/static/media/1200px-Cybertrucklogo.svg.af0f71c0b26fb8e64706.png",
     "static/media/waterloo.png": "/static/media/waterloo.1b532f1b077223ad0026.png",
     "static/media/cyberLogo.png.webp": "/static/media/cyberLogo.png.25f278d6683f069aa64e.webp",
+    "static/media/UniversityOfWaterloo_logo_horiz_rgb.png": "/static/media/UniversityOfWaterloo_logo_horiz_rgb.5d316cc70db4b84b094d.png",
+    "static/media/ANSYSLogo.png": "/static/media/ANSYSLogo.a4276597bc7f06ceee4f.png",
     "static/media/fusionLogo.png": "/static/media/fusionLogo.a4c8a909b0b6bf80b287.png",
     "static/media/almagLogo.webp": "/static/media/almagLogo.d46ab3f73c075eea849e.webp",
     "index.html": "/index.html",
-    "main.a4842d8b.css.map": "/static/css/main.a4842d8b.css.map",
-    "main.a5504d05.js.map": "/static/js/main.a5504d05.js.map",
+    "main.c2d66b2e.css.map": "/static/css/main.c2d66b2e.css.map",
+    "main.3227df36.js.map": "/static/js/main.3227df36.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4842d8b.css",
-    "static/js/main.a5504d05.js"
+    "static/css/main.c2d66b2e.css",
+    "static/js/main.3227df36.js"
   ]
 }
