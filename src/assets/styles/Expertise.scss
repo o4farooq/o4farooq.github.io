@@ -88,15 +88,23 @@
     }
 }
 
+/* remove the fixed white */
 .term-text {
     font-size: 1.6rem;
-    color: #fff;
+    /* color: #fff; */         // ← delete this
     margin-top: -10px;
-     .term-gradient {
-      background: linear-gradient(90deg, #fddb4d, #f3ae2c);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+  
+    .term-gradient {
+      /* … */
     }
+  }
+  
+  /* then, underpin all text off a CSS variable or inherit: */
+  .light-mode {
+    color: #000;
+  }
+  .dark-mode {
+    color: #fff;
   }
 
   .cyber-text {
@@ -155,4 +163,17 @@
       transform: translateX(-50%);
     }
   }
- 
+
+  .logo {
+    border-radius: 2px;
+  }
+  
+  .dark-logo {
+    width: 300px;
+    height: 70px;
+  }
+  
+  .light-logo {
+    width: 500px;
+    height: 200px;
+  }

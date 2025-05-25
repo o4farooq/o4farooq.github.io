@@ -1,64 +1,233 @@
-.vertical-timeline span {
-    color: white;
-    font-family: 'Courier Prime', monospace;
-}
+/* src/assets/styles/Timeline.scss */
+/* existing styles above... */
 
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
-}
+/* ====== Logo Tabs Styles with Responsive Headings ====== */
+.vt-container {
+    max-width: 950px;
+    width: 100%;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 12px;
+  }
+  
+  /* Light mode */
+  .vt-container.light {
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .vt-container.light .timeline-header,
+  .vt-container.light .tab-heading,
+  .vt-container.light .text-content p {
+    color: #000000;
+  }
+  
+  /* Dark mode */
+  .vt-container.dark {
+    background: #191a1d;  /* darker navy/black blend */
+    box-shadow: 0 5px 10px rgba(255,255,255,0.2);
+  }
+  .vt-container.dark .timeline-header,
+  .vt-container.dark .tab-heading,
+  .vt-container.dark .text-content p {
+    color: #ffffff;
+  }
+  
+  .vt-container .content {
+    display: flex;
+    align-items: flex-start;
+  }
+  .vt-container input[type="radio"] {
+    display: none !important;
+  }
+  .vt-container .list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 8px;
+    gap: 24px; /* space between logos */
+  }
+  .vt-container .list label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: grayscale(0);
+    opacity: 1;
+  }
+  .vt-container .tab-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+  #almag:checked ~ .list .almag,
+  #vision1:checked ~ .list .vision1,
+  #vision2:checked ~ .list .vision2 {
+    transform: scale(1.2);
+  }
+  #almag:checked ~ .list label:not(.almag),
+  #vision1:checked ~ .list label:not(.vision1),
+  #vision2:checked ~ .list label:not(.vision2) {
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
+  .vt-container .text-content {
+    flex: 1;
+    margin-left: 80px;
+  }
+  .vt-container .text {
+    display: none;
+  }
+  #almag:checked ~ .text-content .almag,
+  #vision1:checked ~ .text-content .vision1,
+  #vision2:checked ~ .text-content .vision2 {
+    display: block;
+  }
+  
+  /* Global Timeline header */
+  .timeline-header {
+    margin-bottom: 24px;
+    font-size: 2.5rem;
+  }
+  
+  /* Tab heading default style */
+  .tab-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: linear-gradient(270deg, #00d2ff 0%, #3a47d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 16px;
+  }
+  
+  .companyName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: linear-gradient(270deg, #FCEE85, #D1A918);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 16px;
+  }
 
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
-}
+  @media screen and (max-width: 768px) {
+    .vt-container .content {
+      flex-direction: column;
+    }
+    .vt-container .list {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-left: 0;
+      gap: 16px;
+    }
+    .vt-container .list label {
+      height: 60px;
+    }
+    .vt-container .text-content {
+      width: 100%;
+      margin: 20px 0 0;
+    }
+  
+    /* responsive font adjustments */
+    .timeline-header {
+      font-size: 2rem;
+    }
+    .tab-heading {
+      font-size: 1.5rem;
+    }
 
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
-}
+    .companyName {
+        font-size: 1.0rem;
+      }
+  }
+  
+  .companyName {
+    font-weight: 900;  /* or bold */
+  }
 
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
-}
+  .term-text {
+    font-size: 1.0rem;
+    color: #fff;
+    margin-top: -10px;
+     .term-gradient {
+      font-weight: 700;        
+      background: linear-gradient(270deg, #fddb4d, #f3ae2c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 
-.vertical-timeline-element span {
-    color: rgb(39, 40, 34);
-}
+  /* make the “company – location” line responsive */
+.term-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;         /* space between gradient and plain text */
+    font-size: 1.6rem;   /* desktop size */
+    margin: 0 0 16px;    /* adjust as needed */
+    color: inherit;      /* will pick up #000 or #fff from container */
+  }
+  
+  .term-text .term-gradient {
+    font-weight: 700;
+    background: linear-gradient(270deg, #fddb4d, #f3ae2c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* shrink it down on phones */
+  @media (max-width: 768px) {
+    .term-text {
+      font-size: 1.1rem;  /* smaller on mobile */
+      gap: 0.25rem;       /* tighter gap */
+      margin-bottom: 12px;
+    }
+    .term-text .term-gradient {
+      font-size: inherit; /* match the .term-text size */
+    }
+  }
 
-.vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
-}
 
-.svg-inline--fa {
-    color: white;
-}
-
-@media screen and (max-width: 1170px) {
-    .vertical-timeline-element .vertical-timeline-element-date {
+  .chip {
+    color: rgb(39, 40, 34) !important;
+    background: linear-gradient(90deg, #fddb4d, #f3ae2c) !important;
+    font-size: 0.8rem !important;
+    height: 25px !important;
+  
+    span {
+        font-family: 'Courier Prime', monospace;
         color: rgb(39, 40, 34);
+    }
+  
+    svg {
+        height: 15px !important;
     }
 }
 
-.timeline-logo {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border-radius: 50%;
-  }
+.flex-chips {
+    line-height: 2;
+    margin: 0.5;
 
-  /* full‐width subtitle container */
-.timeline-subtitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.5rem;  /* space before the paragraph */
-  }
-  
-  /* style for left side (company) */
-  .company-name {
-    font-weight: 800;
-  }
-  
-  /* style for right side (location) */
-  .location {
-    font-size: 0.9rem;
-    color: #555;
-  }
+    .chip-title {
+        color: white;
+        padding-right: 10px;
+    }
+}
+
+.flex-chips .MuiChip-root {
+    margin-right: 0.5em;
+}
+
+.flex-chips .MuiChip-outlined {
+    background-color: #e0e0e0;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.flex-chips .MuiChip-outlined span {
+    color: rgb(39, 40, 34);
+}

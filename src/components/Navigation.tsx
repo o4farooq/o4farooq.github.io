@@ -15,10 +15,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import oLogo from '../assets/images/omer-logo.png';
 
 const drawerWidth = 240;
-const navItems = [['About', 'expertise'], ['Experience', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
+const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -58,10 +57,6 @@ function Navigation({parentToChild, modeChange}: any) {
     }
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   const drawer = (
     <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <p className="mobile-menu-top"><ListIcon/>Menu</p>
@@ -92,13 +87,11 @@ function Navigation({parentToChild, modeChange}: any) {
           >
             <MenuIcon />
           </IconButton>
-          <div onClick={scrollToTop} style={{ cursor: "pointer" }}>
-          <img
-            src={oLogo}
-            alt="Omer Logo"
-            style={{ width: "72px", height: "72px", marginRight: "16px", borderRadius: "50%" }}
-          />
-          </div>
+          {mode === 'dark' ? (
+            <LightModeIcon onClick={() => modeChange()}/>
+          ) : (
+            <DarkModeIcon onClick={() => modeChange()}/>
+          )}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>

@@ -1,116 +1,120 @@
+// src/components/Timeline.tsx
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import Chip from '@mui/material/Chip'; 
 import almagLogo from "../assets/images/almagLogo.webp";
 import visionLogo from "../assets/images/VISION_Visuel-Post-Windoor-2023_V3.jpg";
-import 'react-vertical-timeline-component/style.min.css';
-import '../assets/styles/Timeline.scss'
+import '../assets/styles/Timeline.scss';
 
-function Timeline() {
+interface TimelineProps {
+  mode: 'light' | 'dark';
+}
+
+
+const labelsFirst = [
+  "AutoCAD",
+  "DFM",
+  "GD&T",
+  "Lean Six Sigma",
+];
+
+
+const labelsSecond = [
+  "SolidWorks",
+  "Excel",
+  "ANSYS Workbench",
+  "AutoCAD",
+];
+
+
+const labelsThird = [
+  "AutoCAD",
+  "Design for Manufacturability",
+  "GD&T",
+  "Lean Six Sigma",
+];
+
+const Timeline: React.FC<TimelineProps> = ({ mode }) => {
   return (
     <div id="history">
       <div className="items-container">
-      <h1
-                    style={{
-                    fontSize: "2.5rem",
-                    fontWeight: "bold",
-                    letterSpacing: "1px",
-                    /* gradient text: */
-                    background: "linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent"
-                    }}
-                    >
-                    Experience
-                </h1>
-        <VerticalTimeline>
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="May 2025 - present"
-            icon={<img src={almagLogo} alt="Almag" className="timeline-logo" />}
-            iconStyle={{
-            // white circle behind your logo
-              padding: "0px",           // gives your logo breathing room
-            }}
-          >
-            <h3   className="vertical-timeline-element-title"
-                  style={{
-                    background: "linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                  }}
-                  >
-                  Manufacturing Engineering Intern</h3>
+        <h1 className="timeline-header">Experience</h1>
 
-            <div className="timeline-subtitle">
-              <span className="company-name">ALMAG Alumnium</span>
-              <span className="location">Brampton, ON</span>
+        {/* ====== Logo-only Tabs Section ====== */}
+        <div className={`vt-container ${mode}`}>  {/* adds light/dark class */}
+          <div className="content">
+            <input type="radio" name="slider" defaultChecked id="almag" />
+            <input type="radio" name="slider" id="vision1" />
+            <input type="radio" name="slider" id="vision2" />
+
+            <div className="list">
+              <label htmlFor="almag" className="almag">
+                <img src={almagLogo} alt="ALMAG" className="tab-logo" />
+              </label>
+              <label htmlFor="vision1" className="vision1">
+                <img src={visionLogo} alt="Vision" className="tab-logo" />
+              </label>
+              <label htmlFor="vision2" className="vision2">
+                <img src={visionLogo} alt="Vision" className="tab-logo" />
+              </label>
             </div>
-            <p>
-              Supported Cybertruck production, did time studies and AutoCAD
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="Sep 2024 - Dec 2024"
-            icon={<img src={visionLogo} alt="Vision" className="timeline-logo" />}
-            iconStyle={{
-            // white circle behind your logo
-              padding: "0px",           // gives your logo breathing room
-            }}
-          >
-            <h3    className="vertical-timeline-element-title"
-                  style={{
-                    background: "linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                  }}
-                  >
-                  Systems Engineering Intern</h3>
-            <div className="timeline-subtitle">
-              <span className="company-name">Vision Extrusions</span>
-              <span className="location">Toronto, ON</span>
-            </div>            <p>
-              Integrated a database, designed, tested and optimized prototypes
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="Jan 2023 - Apr 2023"
-            icon={<img src={visionLogo} alt="Vision" className="timeline-logo" />}
-            iconStyle={{
-            // white circle behind your logo
-              padding: "0px",           // gives your logo breathing room
-            }}
-          >
-            <h3    className="vertical-timeline-element-title"
-                  style={{
-                    background: "linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                  }}
-                  >
-                  Mechanical Engineering Intern</h3>
-            
-            <div className="timeline-subtitle">
-              <span className="company-name">Vision Extrusions</span>
-              <span className="location">Toronto, ON</span>
+
+            <div className="text-content">
+              <div className="almag text">
+                {/* apply CSS class for heading instead of inline style */}
+                <h1 className="tab-heading">Manufacturing Engineering Intern</h1>
+                <p className="term-text">
+                  <span className="term-gradient">ALMAG Aluminum</span> • Brampton, ON
+                </p>
+                <strong>Date:</strong> May 2025 – Present
+                <p> • Supported Cybertruck aluminum tonneau cover production by optimizing layouts for precision and efficiency </p>
+                <p> • Improved material flow by revising AutoCAD layouts, reducing support distances by 27%</p>
+                <p> • Conducted 12+ time studies to reduce cycle times by 19% through standardized work procedures </p>
+                <div className="flex-chips">
+                  <span className="chip-title">Skills:</span>
+                  {labelsFirst.map((label, index) => (
+                    <Chip key={index} className='chip' label={label} />
+                  ))}
+               </div>
+              </div>
+              <div className="vision1 text">
+                <h1 className="tab-heading">Systems Engineering Intern</h1>
+                <p className="term-text">
+                  <span className="term-gradient">Vision Extrusions Group</span> • Toronto, ON
+                </p>
+                <strong>Date:</strong> September 2024 – December 2024
+                <p> • Built an Excel-based WMS for 5,400+ dies, improving data access speed by 72% </p>
+                <p> • Designed and simulated a clamping system in SolidWorks/ANSYS to support 55kg loads</p>
+                <p> • Enhanced frame durability by increasing Moment of Inertia by 64% through material strength analysis </p>
+                <div className="flex-chips">
+                  <span className="chip-title">Skills:</span>
+                  {labelsSecond.map((label, index) => (
+                    <Chip key={index} className='chip' label={label} />
+                  ))}
+                </div>
+              </div>
+              <div className="vision2 text">
+                <h1 className="tab-heading">Mechanical Engineering Intern</h1>
+                <p className="term-text">
+                  <span className="term-gradient">Vision Extrusions Group</span> • Toronto, ON
+                </p>
+                <strong>Date:</strong> January 2024 – April 2024
+                <p> • Created 8+ GD&T-compliant 3D window profile designs for 3D printing and testing </p>
+                <p> • Prototyped and tested window components for strength, waterproofing, and presentation </p>
+                <p> • Boosted waterproofing by 22% through RCA testing under wind and rain simulations </p>
+                <div className="flex-chips">
+                  <span className="chip-title">Skills:</span>
+                  {labelsThird.map((label, index) => (
+                    <Chip key={index} className='chip' label={label} />
+                  ))}
+
+                </div>
+              </div>
             </div>
-            <p>
-              Created/tested 3D CAD designs, optimized water resistance from RCA 
-            </p>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
+          </div>
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default Timeline;
