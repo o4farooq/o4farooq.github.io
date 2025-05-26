@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e7cb961.css",
-    "main.js": "/static/js/main.76f0c87c.js",
+    "main.css": "/static/css/main.ecc46291.css",
+    "main.js": "/static/js/main.8cf00074.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/mock10.png": "/static/media/mock10.2d05b02ba569a430a255.png",
-    "static/media/mock09.png": "/static/media/mock09.e18677ccfc932e52d754.png",
+    "static/media/modar-kajo-RtawfHplLrc-unsplash.jpg": "/static/media/modar-kajo-RtawfHplLrc-unsplash.0c273a8bfd32b26f9e92.jpg",
     "static/media/Visual-Studio-Logo-2019.png": "/static/media/Visual-Studio-Logo-2019.a0bfe7b8edcb75d89227.png",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
@@ -22,12 +22,12 @@
     "static/media/fusionLogo.png": "/static/media/fusionLogo.a4c8a909b0b6bf80b287.png",
     "static/media/almagLogo.webp": "/static/media/almagLogo.d46ab3f73c075eea849e.webp",
     "index.html": "/index.html",
-    "main.1e7cb961.css.map": "/static/css/main.1e7cb961.css.map",
-    "main.76f0c87c.js.map": "/static/js/main.76f0c87c.js.map",
+    "main.ecc46291.css.map": "/static/css/main.ecc46291.css.map",
+    "main.8cf00074.js.map": "/static/js/main.8cf00074.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e7cb961.css",
-    "static/js/main.76f0c87c.js"
+    "static/css/main.ecc46291.css",
+    "static/js/main.8cf00074.js"
   ]
 }
