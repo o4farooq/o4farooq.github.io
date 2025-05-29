@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ecc46291.css",
-    "main.js": "/static/js/main.8cf00074.js",
+    "main.css": "/static/css/main.68db3c5b.css",
+    "main.js": "/static/js/main.bd4da234.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/mock10.png": "/static/media/mock10.2d05b02ba569a430a255.png",
     "static/media/modar-kajo-RtawfHplLrc-unsplash.jpg": "/static/media/modar-kajo-RtawfHplLrc-unsplash.0c273a8bfd32b26f9e92.jpg",
@@ -22,12 +22,12 @@
     "static/media/fusionLogo.png": "/static/media/fusionLogo.a4c8a909b0b6bf80b287.png",
     "static/media/almagLogo.webp": "/static/media/almagLogo.d46ab3f73c075eea849e.webp",
     "index.html": "/index.html",
-    "main.ecc46291.css.map": "/static/css/main.ecc46291.css.map",
-    "main.8cf00074.js.map": "/static/js/main.8cf00074.js.map",
+    "main.68db3c5b.css.map": "/static/css/main.68db3c5b.css.map",
+    "main.bd4da234.js.map": "/static/js/main.bd4da234.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecc46291.css",
-    "static/js/main.8cf00074.js"
+    "static/css/main.68db3c5b.css",
+    "static/js/main.bd4da234.js"
   ]
 }
