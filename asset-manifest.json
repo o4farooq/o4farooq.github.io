@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d10bb66.css",
+    "main.css": "/static/css/main.d864d6d2.css",
     "main.js": "/static/js/main.70ded306.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/pianoproject.jpg": "/static/media/pianoproject.88c4f3aecd6f4bcc03d1.jpg",
@@ -23,12 +23,12 @@
     "static/media/fusionLogo.png": "/static/media/fusionLogo.a4c8a909b0b6bf80b287.png",
     "static/media/almagLogo.webp": "/static/media/almagLogo.d46ab3f73c075eea849e.webp",
     "index.html": "/index.html",
-    "main.2d10bb66.css.map": "/static/css/main.2d10bb66.css.map",
+    "main.d864d6d2.css.map": "/static/css/main.d864d6d2.css.map",
     "main.70ded306.js.map": "/static/js/main.70ded306.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d10bb66.css",
+    "static/css/main.d864d6d2.css",
     "static/js/main.70ded306.js"
   ]
 }
