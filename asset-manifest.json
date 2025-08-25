@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ffe08693.css",
-    "main.js": "/static/js/main.b2243756.js",
+    "main.css": "/static/css/main.0913370d.css",
+    "main.js": "/static/js/main.9fc70110.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/IMG_3760.jpg": "/static/media/IMG_3760.19f6c266d2e4d1938d16.jpg",
     "static/media/IMG_3745.png": "/static/media/IMG_3745.80af5ba03e2aa4f1f56d.png",
@@ -60,12 +60,12 @@
     "static/media/fusionLogo.png": "/static/media/fusionLogo.a4c8a909b0b6bf80b287.png",
     "static/media/almagLogo.webp": "/static/media/almagLogo.d46ab3f73c075eea849e.webp",
     "index.html": "/index.html",
-    "main.ffe08693.css.map": "/static/css/main.ffe08693.css.map",
-    "main.b2243756.js.map": "/static/js/main.b2243756.js.map",
+    "main.0913370d.css.map": "/static/css/main.0913370d.css.map",
+    "main.9fc70110.js.map": "/static/js/main.9fc70110.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffe08693.css",
-    "static/js/main.b2243756.js"
+    "static/css/main.0913370d.css",
+    "static/js/main.9fc70110.js"
   ]
 }
