@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.0913370d.css",
+    "main.css": "/static/css/main.87fcfd78.css",
     "main.js": "/static/js/main.9fc70110.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/IMG_3760.jpg": "/static/media/IMG_3760.19f6c266d2e4d1938d16.jpg",
@@ -60,12 +60,12 @@
     "static/media/fusionLogo.png": "/static/media/fusionLogo.a4c8a909b0b6bf80b287.png",
     "static/media/almagLogo.webp": "/static/media/almagLogo.d46ab3f73c075eea849e.webp",
     "index.html": "/index.html",
-    "main.0913370d.css.map": "/static/css/main.0913370d.css.map",
+    "main.87fcfd78.css.map": "/static/css/main.87fcfd78.css.map",
     "main.9fc70110.js.map": "/static/js/main.9fc70110.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0913370d.css",
+    "static/css/main.87fcfd78.css",
     "static/js/main.9fc70110.js"
   ]
 }
