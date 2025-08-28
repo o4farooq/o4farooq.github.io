@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e301c68.css",
-    "main.js": "/static/js/main.501934ed.js",
+    "main.css": "/static/css/main.69f8f2af.css",
+    "main.js": "/static/js/main.a9c13a7c.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/IMG_3760.jpg": "/static/media/IMG_3760.19f6c266d2e4d1938d16.jpg",
     "static/media/IMG_3745.png": "/static/media/IMG_3745.80af5ba03e2aa4f1f56d.png",
@@ -59,12 +59,12 @@
     "static/media/fusionLogo.png": "/static/media/fusionLogo.a4c8a909b0b6bf80b287.png",
     "static/media/almagLogo.webp": "/static/media/almagLogo.d46ab3f73c075eea849e.webp",
     "index.html": "/index.html",
-    "main.5e301c68.css.map": "/static/css/main.5e301c68.css.map",
-    "main.501934ed.js.map": "/static/js/main.501934ed.js.map",
+    "main.69f8f2af.css.map": "/static/css/main.69f8f2af.css.map",
+    "main.a9c13a7c.js.map": "/static/js/main.a9c13a7c.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e301c68.css",
-    "static/js/main.501934ed.js"
+    "static/css/main.69f8f2af.css",
+    "static/js/main.a9c13a7c.js"
   ]
 }
