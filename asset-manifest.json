@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.97e93c47.css",
-    "main.js": "/static/js/main.f4bfd265.js",
+    "main.css": "/static/css/main.981df023.css",
+    "main.js": "/static/js/main.edddd343.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/IMG_3760.jpg": "/static/media/IMG_3760.19f6c266d2e4d1938d16.jpg",
     "static/media/IMG_3745.png": "/static/media/IMG_3745.80af5ba03e2aa4f1f56d.png",
@@ -41,6 +41,7 @@
     "static/media/Screenshot 2025-08-20 at 10.48.29 AM.png": "/static/media/Screenshot 2025-08-20 at 10.48.29 AM.fef7ec63a51025278257.png",
     "static/media/Screenshot 2025-08-21 at 10.35.32 AM.png": "/static/media/Screenshot 2025-08-21 at 10.35.32 AM.9a93877d34f3905e9a85.png",
     "static/media/Real Model-4.png": "/static/media/Real Model-4.017443387a6b8df2a629.png",
+    "static/media/CleanShot 2025-09-23 at 22.11.42@2x.png": "/static/media/CleanShot 2025-09-23 at 22.11.42@2x.4689893f0a13fb159c1d.png",
     "static/media/engLogo.png": "/static/media/engLogo.b536d2bfab07b496b77c.png",
     "static/media/MatlabLogo.png": "/static/media/MatlabLogo.9fcb98eb6f153bbd66e8.png",
     "static/media/Screenshot 2025-08-20 at 2.41.36 PM.png": "/static/media/Screenshot 2025-08-20 at 2.41.36 PM.eca1546eac3f949004c1.png",
@@ -60,12 +61,12 @@
     "static/media/fusionLogo.png": "/static/media/fusionLogo.a4c8a909b0b6bf80b287.png",
     "static/media/almagLogo.webp": "/static/media/almagLogo.d46ab3f73c075eea849e.webp",
     "index.html": "/index.html",
-    "main.97e93c47.css.map": "/static/css/main.97e93c47.css.map",
-    "main.f4bfd265.js.map": "/static/js/main.f4bfd265.js.map",
+    "main.981df023.css.map": "/static/css/main.981df023.css.map",
+    "main.edddd343.js.map": "/static/js/main.edddd343.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97e93c47.css",
-    "static/js/main.f4bfd265.js"
+    "static/css/main.981df023.css",
+    "static/js/main.edddd343.js"
   ]
 }
