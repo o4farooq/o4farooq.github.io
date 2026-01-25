@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.981df023.css",
-    "main.js": "/static/js/main.1e1bc732.js",
+    "main.css": "/static/css/main.406814e8.css",
+    "main.js": "/static/js/main.8f454c9c.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/IMG_3760.jpg": "/static/media/IMG_3760.19f6c266d2e4d1938d16.jpg",
     "static/media/IMG_3745.png": "/static/media/IMG_3745.80af5ba03e2aa4f1f56d.png",
@@ -51,6 +51,7 @@
     "static/media/piano.png": "/static/media/piano.7d3efacf15eceb7c40e1.png",
     "static/media/Screenshot 2025-08-14 at 7.59.43 PM.png": "/static/media/Screenshot 2025-08-14 at 7.59.43 PM.0bbf67650df84ad4bf57.png",
     "static/media/SolidWorks-Logo.png": "/static/media/SolidWorks-Logo.63c89d740fd13b3fce5e.png",
+    "static/media/owensLogo.png": "/static/media/owensLogo.c1e22f8550b26a8e1843.png",
     "static/media/autoLogo.svg.png": "/static/media/autoLogo.svg.86e473fd7f0a54a1864c.png",
     "static/media/VISION_Visuel-Post-Windoor-2023_V3.jpg": "/static/media/VISION_Visuel-Post-Windoor-2023_V3.11f116039b65822e3bfd.jpg",
     "static/media/ANSLogo.png": "/static/media/ANSLogo.8446ce72d68e50bf92c3.png",
@@ -60,12 +61,12 @@
     "static/media/fusionLogo.png": "/static/media/fusionLogo.a4c8a909b0b6bf80b287.png",
     "static/media/almagLogo.webp": "/static/media/almagLogo.d46ab3f73c075eea849e.webp",
     "index.html": "/index.html",
-    "main.981df023.css.map": "/static/css/main.981df023.css.map",
-    "main.1e1bc732.js.map": "/static/js/main.1e1bc732.js.map",
+    "main.406814e8.css.map": "/static/css/main.406814e8.css.map",
+    "main.8f454c9c.js.map": "/static/js/main.8f454c9c.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.981df023.css",
-    "static/js/main.1e1bc732.js"
+    "static/css/main.406814e8.css",
+    "static/js/main.8f454c9c.js"
   ]
 }
